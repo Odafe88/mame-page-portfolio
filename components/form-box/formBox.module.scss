@@ -1,0 +1,128 @@
+$main-color: #7900C4;
+$true-color: #000;
+
+.contact_form_cont {
+    margin: 10px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .inputs_box {
+            margin: 20px 0;
+            border: 3px solid $main-color;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        .form_btn_cont {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+
+            .form_btn {
+                background: #7900C4;
+                color: #fff;
+                border: none;
+                width: auto;
+                padding: 10px 40px;
+                font-size: 16px;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 700;
+                border-radius: 50px;
+                cursor: pointer;
+                box-shadow: #282829 5px 5px;
+            }
+        }
+    }
+
+    .contact_social_cont {
+        padding: 20px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .whatsapp_btn_cont {
+            position: relative;
+            margin: 10px;
+
+            .whatsapp_btn {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #0D8016;
+                color: #fff;
+                border: none;
+                width: auto;
+                padding: 10px 20px;
+                font-size: 16px;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 700;
+                border-radius: 50px;
+                cursor: pointer;
+                box-shadow: #282829 5px 5px;
+
+                .icon {
+                    padding-right: 5px;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .linkedin_btn_cont {
+            margin: 10px;
+
+            .linkedin_btn {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #0072B1;
+                color: #fff;
+                border: none;
+                width: auto;
+                padding: 10px 20px;
+                font-size: 16px;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 700;
+                border-radius: 50px;
+                cursor: pointer;
+                box-shadow: #282829 5px 5px;
+
+                .icon {
+                    padding-right: 5px;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .twitter_btn_cont {
+            margin: 10px;
+
+            .twitter_btn {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #00ACEE;
+                color: #fff;
+                border: none;
+                width: auto;
+                padding: 10px 20px;
+                font-size: 16px;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 700;
+                border-radius: 50px;
+                cursor: pointer;
+                box-shadow: #282829 5px 5px;
+
+                .icon {
+                    padding-right: 5px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

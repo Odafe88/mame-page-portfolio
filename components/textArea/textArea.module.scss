@@ -1,0 +1,39 @@
+$sub-color: #FAE703;
+$main-color: #7900C4;
+$true-color: #000;
+
+.text_area_container {
+    position: relative;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .text_area {
+        background: none;
+        color: $true-color;
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        border-bottom: 2px solid $sub-color;
+        margin: 25px 0;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .text_area_label {
+        color: $main-color;
+        font-size: 18px;
+        font-weight: 700;
+        padding-right: 5px;
+        position: relative;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+    }
+}

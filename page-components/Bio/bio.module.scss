@@ -1,0 +1,95 @@
+.bio_container {
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+
+    .bio_header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+        width: 97px;
+        color: #7900C4;
+        text-align: center;
+        border-bottom: 1px solid #FAE703;
+
+        h1 {
+
+            font-size: 32px;
+            font-weight: 700;
+            margin: 5px;
+        }
+    }
+
+    .bio_img_cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 340px;
+        padding: 10px;
+    }
+
+    .bio_who {
+        position: relative;
+        margin-top: 10px;
+        padding: 20px 0;
+
+        .home_who_header {
+            color: #7900C4;
+            font-weight: 700;
+            text-align: center;
+
+            h2 {
+                font-size: 28px;
+                margin: 5px 0;
+            }
+        }
+
+        .who_details_cont {
+
+
+            .who_details {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 18px;
+
+                .who_details_img {
+                    padding: 10px;
+                }
+
+                .who_details_text {
+                    width: 65%;
+                    padding: 10px;
+                }
+            }
+        }
+
+        .who_btn_cont {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .who_btn {
+                background: #7900C4;
+                color: #fff;
+                border: none;
+                width: auto;
+                padding: 10px;
+                font-size: 16px;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 700;
+                border-radius: 50px;
+                cursor: pointer;
+                box-shadow: #282829 5px 5px;
+            }
+        }
+
+        .home_footer_ln {
+            width: 25%;
+            height: 3px;
+            background: #FAE703;
+            margin: 40px auto;
+        }
+    }
+}

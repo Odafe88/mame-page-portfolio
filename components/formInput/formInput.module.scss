@@ -1,0 +1,38 @@
+$sub-color: #FAE703;
+$main-color: #7900C4;
+$true-color: #000;
+
+.input_group {
+    position: relative;
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form_input {
+        background: none;
+        background-color: white;
+        color: $true-color;
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        border-bottom: 2px solid $sub-color;
+        margin: 20px 0;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .form_label {
+        color: $main-color;
+        font-size: 18px;
+        font-weight: 700;
+        padding-right: 5px;
+        position: relative;
+        pointer-events: none;
+    }
+}

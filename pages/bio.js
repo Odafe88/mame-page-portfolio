@@ -3,9 +3,9 @@ import { BioPage } from '../page-components'
 
 const bio = () => {
     return (
-        <div>
+        <>
             <BioPage />
-        </div>
+        </>
     )
 }
 

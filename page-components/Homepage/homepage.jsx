@@ -4,12 +4,12 @@ import Image from "next/image";
 import Link from "next/link"
 
 import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri"
+import { RiComputerLine } from "react-icons/ri"
+import { FaPuzzlePiece } from "react-icons/fa"
 
 import { FormBox } from '../../components';
 
 import portImg1 from "../../assets/portImg1.png";
-import whoIcon1 from "../../assets/who1_icon.svg";
-import whoIcon2 from "../../assets/who2_icon.svg";
 
 import proj1 from "../../assets/projects/proj1.png"
 import proj2 from "../../assets/projects/proj2.png"
@@ -26,25 +26,25 @@ const Homepage = () => {
         {
             name: "100% NFT",
             image: proj1,
-            url: "/",
+            url: "/projects/100-nft",
             excerpt: "is a WEB3 based T-shirt store."
         },
         {
             name: "Cakasa",
             image: proj2,
-            url: "/",
+            url: "/projects/cakasa",
             excerpt: "is an Oil and gas company."
         },
         {
             name: "Valuwa ",
             image: proj3,
-            url: "/",
+            url: "/projects/valuwa",
             excerpt: "is a real estate solution that helps solve housing problems."
         },
         {
             name: "Hostel rentie",
             image: proj4,
-            url: "/",
+            url: "/projects/hostel-rentie",
             excerpt: "provides solutions to accommodation for students."
         }
     ];
@@ -78,18 +78,25 @@ const Homepage = () => {
                         <b>( website, app etc)</b>. let them enjoy the future with <b>better security and decentralisation</b>.
                     </p>
                     <div className={styles.home_expo_btn_cont}>
-                        <button className={styles.home_expo_btn1}>
-                            Hire me
-                        </button>
-                        <button className={styles.home_expo_btn2}>
-                            Download Cv
-                        </button>
+                        <Link href="https://wa.link/sedglk">
+                            <button className={styles.home_expo_btn1}>
+                                Hire me
+                            </button>
+                        </Link>
+
+                        <Link href="https://drive.google.com/drive/folders/11Q8QzyEp0Hq91XoaPy9yBT7IlrwEouIM?usp=sharing">
+                            <button className={styles.home_expo_btn2}>
+                                Download Cv
+                            </button>
+                        </Link>
                     </div>
                     <div className={styles.home_consult}>
                         <p>Enjoy free 15 minutes consultation</p>
-                        <button className={styles.home_consult_btn}>
-                            Book me
-                        </button>
+                        <Link href="https://wa.link/sedglk">
+                            <button className={styles.home_consult_btn}>
+                                Book me
+                            </button>
+                        </Link>
                     </div>
                 </div>
                 <div className={styles.home_img_cont}>
@@ -104,7 +111,7 @@ const Homepage = () => {
                 <div className={styles.who_details_cont}>
                     <div className={styles.who_details}>
                         <div className={styles.who_details_img}>
-                            <Image src={whoIcon1} />
+                            <RiComputerLine />
                         </div>
                         <div className={styles.who_details_text}>
                             <p>
@@ -116,7 +123,7 @@ const Homepage = () => {
                     </div>
                     <div className={styles.who_details}>
                         <div className={styles.who_details_img}>
-                            <Image src={whoIcon2} />
+                            <FaPuzzlePiece />
                         </div>
                         <div className={styles.who_details_text}>
                             <p>
@@ -129,22 +136,25 @@ const Homepage = () => {
                     </div>
                 </div>
                 <div className={styles.who_btn_cont}>
-                    <button className={styles.who_btn}>
-                        Learn more about Mame
-                    </button>
+                    <Link href="/bio">
+                        <button className={styles.who_btn}>
+                            Learn more about Mame
+                        </button>
+                    </Link>
                 </div>
+
+            </div>
+            <div className={styles.home_proj_cont}>
                 <div className={styles.home_footer_ln}>
 
                 </div>
-            </div>
-            <div className={styles.home_proj_cont}>
                 <div className={styles.proj_head_cont}>
                     <h2>Projects</h2>
                 </div>
                 <div className={styles.home_proj_box}>
                     {projects.map((project) => {
                         return (
-                            <div className={styles.home_proj}>
+                            <div className={styles.home_proj} key={project.name}>
                                 <div className={styles.home_proj_img}>
                                     <Image src={project.image} />
                                 </div>
@@ -212,7 +222,7 @@ const Homepage = () => {
                     <p>You want to see my skillset and experience you should download my resume below.</p>
                 </div>
                 <div className={styles.home_resume_btn}>
-                    <Link href="/">
+                    <Link href="https://drive.google.com/drive/folders/11Q8QzyEp0Hq91XoaPy9yBT7IlrwEouIM?usp=sharing">
                         Click here to check CV
                     </Link>
                 </div>
@@ -225,19 +235,15 @@ const Homepage = () => {
                 </div>
             </div>
             <div className={styles.home_contact_cont}>
-                <div className={styles.home_contact_head}>
-                    <h3>
-                        Let's work together
-                    </h3>
-                </div>
-                <div className={styles.home_contact_excerpt}>
-                    <p>
-                        You will like to connect with them then you can connect by submiting the form below and connecting with me on my socials
-                    </p>
-                </div>
+
                 <div className={styles.contact_form_cont}>
                     <FormBox />
                 </div>
+            </div>
+            <div className={styles.footer_link}>
+                <Link href="/">
+                    Go Back to top
+                </Link>
             </div>
         </div >
     )

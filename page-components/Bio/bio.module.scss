@@ -1,3 +1,15 @@
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: 280px) {
+        @content;
+    }
+}
+
 .bio_container {
     position: relative;
     font-family: 'Quicksand', sans-serif;
@@ -17,6 +29,10 @@
             font-size: 32px;
             font-weight: 700;
             margin: 5px;
+
+            @include tablet {
+                font-size: 24px;
+            }
         }
     }
 
@@ -27,12 +43,21 @@
         margin: auto;
         width: 340px;
         padding: 10px;
+
+        @include tablet {
+            width: 280px;
+        }
     }
 
     .bio_who {
         position: relative;
         margin-top: 10px;
         padding: 20px 0;
+
+        @include tablet {
+            padding: 10px;
+        }
+
 
         .home_who_header {
             color: #7900C4;
@@ -42,6 +67,10 @@
             h2 {
                 font-size: 28px;
                 margin: 5px 0;
+
+                @include tablet {
+                    font-size: 24px;
+                }
             }
         }
 
@@ -55,12 +84,34 @@
                 font-size: 18px;
 
                 .who_details_img {
+                    position: relative;
+                    margin: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     padding: 10px;
+                    color: #7900C4;
+                    border: 3px solid #7900C4;
+                    border-radius: 5px;
+                    background: #FAE703;
+                    font-size: 30px;
+                    width: 60px;
+                    height: 60px;
+
+                    @include tablet {
+                        width: 46px;
+                        height: 46px;
+
+                    }
                 }
 
                 .who_details_text {
                     width: 65%;
                     padding: 10px;
+
+                    @include tablet {
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -79,17 +130,236 @@
                 font-size: 16px;
                 font-family: 'Quicksand', sans-serif;
                 font-weight: 700;
-                border-radius: 50px;
+                border-radius: 5px;
                 cursor: pointer;
                 box-shadow: #282829 5px 5px;
             }
         }
+
+
 
         .home_footer_ln {
             width: 25%;
             height: 3px;
             background: #FAE703;
             margin: 40px auto;
+
+            @include tablet {
+                width: 70%;
+            }
         }
+    }
+
+    .bio_shalaye_cont {
+        position: relative;
+        background-color: #fff;
+        background-image: url("../../assets/bckgrnd/Mask\ Group\ 3.png");
+        background-position: center;
+        // background-blend-mode: color;
+        background-attachment: scroll;
+        background-size: cover;
+
+        .bio_shalaye_p {
+            padding: 40px;
+
+            p {
+                font-size: 18px;
+
+                @include tablet {
+                    font-size: 14px;
+                }
+            }
+
+            @include tablet {
+                padding: 30px;
+
+            }
+        }
+
+        .bio_expo_cont {
+            padding: 40px;
+
+            @include tablet {
+                padding: 10px 20px;
+            }
+
+            .shalaye_btn_cont {
+                display: flex;
+                align-items: center;
+
+                .home_expo_btn1 {
+                    background: #7900C4;
+                    color: #FAE703;
+                    border: none;
+                    width: 140px;
+                    padding: 10px;
+                    font-size: 16px;
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: 700;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: all 0.2s ease;
+                    box-shadow: #282829 5px 5px;
+
+                    &:hover {
+                        box-shadow: #282829 10px 10px;
+                    }
+
+                    @include tablet {
+                        font-size: 12px;
+                        padding: 8px 10px;
+                    }
+
+                }
+
+
+                .home_expo_btn2 {
+                    background: #fff;
+                    color: #7900C4;
+                    border: 3px solid #7900C4;
+                    width: 140px;
+                    padding: 10px;
+                    font-size: 16px;
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: 700;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    margin-left: 30px;
+                    box-shadow: #7900C4 5px 5px;
+                    transition: all 0.2s ease;
+
+                    &:hover {
+                        box-shadow: #7900C4 10px 10px;
+                    }
+
+                    @include tablet {
+                        font-size: 12px;
+                        padding: 8px 10px;
+                    }
+
+                }
+            }
+
+            .shalaye_consult {
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+
+                @include tablet {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 30px;
+                }
+
+                p {
+                    color: #7900C4;
+                    font-size: 20px;
+                    font-weight: 700;
+                    width: fit-content;
+
+                    @include tablet {
+                        width: fit-content;
+                        font-size: 14px;
+                    }
+                }
+
+                .home_consult_btn {
+                    background: #7900C4;
+                    color: #FAE703;
+                    border: none;
+                    width: 140px;
+                    padding: 10px;
+                    font-size: 16px;
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: 700;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    margin-left: 30px;
+                    box-shadow: #FAE703 5px 5px;
+                    transition: all 0.2s ease;
+
+                    &:hover {
+                        box-shadow: #FAE703 10px 10px;
+                    }
+
+                    @include tablet {
+                        font-size: 12px;
+                        padding: 8px 7px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+    .bio_cert_cont {
+        position: relative;
+        padding: 30px;
+
+        .home_footer_ln {
+            width: 25%;
+            height: 3px;
+            background: #FAE703;
+            margin: 40px auto;
+
+            @include tablet {
+                width: 70%;
+            }
+        }
+
+        .bio_cert_heading {
+            text-align: center;
+            color: #7900C4;
+
+            h1 {
+                font-size: 28px;
+
+                @include tablet {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .cert_box_cont {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+
+            .cert_box {
+                margin: auto;
+            }
+        }
+    }
+
+    .bio_formbox {
+        .home_footer_ln {
+            width: 25%;
+            height: 3px;
+            background: #FAE703;
+            margin: 40px auto;
+        }
+    }
+
+    .footer_link {
+        position: relative;
+        width: 100%;
+        padding: 40px;
+        text-align: right;
+        color: #AD12FF;
+        font-size: 18px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        text-decoration: underline;
+
+        @include tablet {
+            padding: 20px;
+            font-size: 14px;
+        }
+
     }
 }

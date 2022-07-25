@@ -1,19 +1,72 @@
 $main-color: #7900C4;
 $true-color: #000;
 
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: 320px) {
+        @content;
+    }
+}
+
 .contact_form_cont {
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .home_contact_head {
+        color: #7900C4;
+        text-align: center;
+
+        h3 {
+            font-size: 28px;
+            font-weight: 700;
+            font-family: 'Quicksand', sans-serif;
+            margin: 10px 0;
+
+            @include tablet {
+                font-size: 20px;
+            }
+
+            @include mobile {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .home_contact_excerpt {
+        max-width: 630px;
+        text-align: center;
+        color: #282829;
+
+        p {
+            font-size: 18px;
+            font-family: 'Quicksand', sans-serif;
+
+            @include tablet {
+                font-size: 14px;
+            }
+        }
+    }
 
     form {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-family: 'Quicksand', sans-serif;
+        width: 720px;
 
         .inputs_box {
             margin: 20px 0;
             border: 3px solid $main-color;
-            border-radius: 20px;
+            border-radius: 5px;
             padding: 20px;
         }
 
@@ -32,9 +85,19 @@ $true-color: #000;
                 font-size: 16px;
                 font-family: 'Quicksand', sans-serif;
                 font-weight: 700;
-                border-radius: 50px;
+                border-radius: 5px;
                 cursor: pointer;
                 box-shadow: #282829 5px 5px;
+                transition: all 0.2s ease;
+
+                @include tablet {
+                    font-size: 12px;
+                    padding: 8px 30px;
+                }
+
+                &:hover {
+                    box-shadow: #282829 10px 10px;
+                }
             }
         }
     }
@@ -46,13 +109,21 @@ $true-color: #000;
         justify-content: center;
         align-items: center;
 
+        @include tablet {
+            padding: 0px;
+        }
+
         .whatsapp_btn_cont {
             position: relative;
             margin: 10px;
 
+            @include tablet {
+                margin: 10px;
+            }
+
             .whatsapp_btn {
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 align-items: center;
                 background: #0D8016;
                 color: #fff;
@@ -62,9 +133,25 @@ $true-color: #000;
                 font-size: 16px;
                 font-family: 'Quicksand', sans-serif;
                 font-weight: 700;
-                border-radius: 50px;
+                border-radius: 5px;
                 cursor: pointer;
                 box-shadow: #282829 5px 5px;
+                transition: all 0.2s ease;
+
+                &:hover {
+                    box-shadow: #282829 10px 10px;
+                }
+
+                @include tablet {
+                    font-size: 12px;
+                    padding: 8px 10px;
+                    width: 98px;
+                }
+
+                @include mobile {
+                    padding: 6px;
+                    width: 70px;
+                }
 
                 .icon {
                     padding-right: 5px;
@@ -76,9 +163,13 @@ $true-color: #000;
         .linkedin_btn_cont {
             margin: 10px;
 
+            @include tablet {
+                margin: 10px;
+            }
+
             .linkedin_btn {
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 align-items: center;
                 background: #0072B1;
                 color: #fff;
@@ -88,9 +179,25 @@ $true-color: #000;
                 font-size: 16px;
                 font-family: 'Quicksand', sans-serif;
                 font-weight: 700;
-                border-radius: 50px;
+                border-radius: 5px;
                 cursor: pointer;
                 box-shadow: #282829 5px 5px;
+                transition: all 0.2s ease;
+
+                &:hover {
+                    box-shadow: #282829 10px 10px;
+                }
+
+                @include tablet {
+                    font-size: 12px;
+                    padding: 8px 10px;
+                    width: 98px;
+                }
+
+                @include mobile {
+                    padding: 6px;
+                    width: 70px;
+                }
 
                 .icon {
                     padding-right: 5px;
@@ -102,9 +209,13 @@ $true-color: #000;
         .twitter_btn_cont {
             margin: 10px;
 
+            @include tablet {
+                margin: 10px;
+            }
+
             .twitter_btn {
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 align-items: center;
                 background: #00ACEE;
                 color: #fff;
@@ -114,9 +225,25 @@ $true-color: #000;
                 font-size: 16px;
                 font-family: 'Quicksand', sans-serif;
                 font-weight: 700;
-                border-radius: 50px;
+                border-radius: 5px;
                 cursor: pointer;
                 box-shadow: #282829 5px 5px;
+                transition: all 0.2s ease;
+
+                &:hover {
+                    box-shadow: #282829 10px 10px;
+                }
+
+                @include tablet {
+                    font-size: 12px;
+                    padding: 8px 10px;
+                    width: 98px;
+                }
+
+                @include mobile {
+                    padding: 6px;
+                    width: 70px;
+                }
 
                 .icon {
                     padding-right: 5px;

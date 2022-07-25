@@ -1,0 +1,9 @@
+.bar_main {
+    position: fixed;
+    background: #7900C4;
+    height: 2px;
+    width: 100vw;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+}

@@ -1,0 +1,349 @@
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: 320px) {
+        @content;
+    }
+}
+
+
+.proj_cont {
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+
+    .proj_header_cont {
+        margin: auto;
+        text-align: center;
+        padding: 8px;
+        max-width: fit-content;
+
+        h1 {
+            color: #FD0054;
+            font-size: 32px;
+            border-bottom: 3px #EFE307 solid;
+
+            @include tablet {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .proj_main_img_cont {
+        width: 60%;
+        margin: auto;
+        padding: 20px;
+
+        @include tablet {
+            padding: 0;
+            width: 100%;
+            margin: 0%;
+        }
+    }
+
+    .proj_details_cont {
+        padding: 20px;
+
+        .home_footer_ln {
+            width: 25%;
+            height: 3px;
+            background: #FAE703;
+            margin: 20px auto;
+
+            @include tablet {
+                width: 60%;
+            }
+        }
+
+        .proj_det_list {
+            margin: auto;
+            width: 70%;
+
+            @include tablet {
+                margin: 0;
+                width: 100%;
+            }
+
+            .proj_det_list_ul,
+            ul {
+                list-style: none;
+                font-size: 18px;
+
+                @include tablet {
+                    font-size: 14px;
+                    padding: 10px;
+                }
+
+                li {
+                    font-size: 18px;
+                    padding: 10px;
+
+                    @include tablet {
+                        font-size: 14px;
+                        padding: 5px;
+                    }
+
+                    .list_green {
+                        color: #FD0054;
+                    }
+                }
+            }
+        }
+    }
+
+    .proj_descr_cont {
+        padding: 20px;
+
+        .proj_descr_head {
+            margin: auto;
+            text-align: center;
+            padding: 8px;
+            max-width: fit-content;
+
+            @include tablet {
+                margin: 0;
+                text-align: left;
+            }
+
+            h1 {
+                color: #000;
+                font-size: 22px;
+                border-bottom: 3px #EFE307 solid;
+
+                @include tablet {
+                    font-size: 18px;
+                    margin: 0;
+                }
+            }
+        }
+
+        .proj_descr {
+            margin: auto;
+            text-align: center;
+            padding: 8px;
+            max-width: 70%;
+
+            @include tablet {
+                margin: 0;
+                text-align: left;
+                width: 100%;
+            }
+
+            p {
+                font-size: 18px;
+
+                @include tablet {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .proj_process_cont {
+        padding: 20px;
+
+        .proj_process_head {
+            margin: auto;
+            text-align: center;
+            padding: 8px;
+            max-width: fit-content;
+
+            h1 {
+                color: #000;
+                font-size: 22px;
+                border-bottom: 3px #EFE307 solid;
+
+                @include tablet {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .process_descr_box {
+            position: relative;
+            margin: auto;
+            padding: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 70%;
+
+            @include tablet {
+                padding: 5px;
+                width: 100%;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow-x: scroll;
+                scrollbar-width: 1000px;
+            }
+
+            .process_descr {
+                padding: 10px;
+                border: 3px #FD0054 solid;
+                border-radius: 20px;
+                height: 170px;
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+
+                @include tablet {
+                    padding: auto;
+                    max-width: 150px;
+                    height: 150px;
+                }
+
+
+                .process_descr_head {
+                    padding: auto;
+
+
+                    h4 {
+                        margin: auto;
+                        text-align: center;
+                        font-size: 18px;
+                        color: #FD0054;
+                        width: max-content;
+                        border-bottom: 1px #EFE307 solid;
+
+                        @include tablet {
+                            margin: auto;
+                            font-size: 8px;
+                        }
+                    }
+                }
+
+                p {
+                    text-align: center;
+                    padding: 10px;
+                    margin: auto;
+
+                    @include tablet {
+                        font-size: 8px;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+
+
+            }
+
+            .process_pointer {
+                color: #FD0054;
+                text-align: center;
+                font-size: 30px;
+
+                @include tablet {
+                    font-size: 8px;
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+
+    .project_link {
+        position: relative;
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+        color: #FD0054;
+        font-size: 18px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        text-decoration: underline;
+
+        @include tablet {
+            font-size: 14px;
+        }
+
+    }
+
+    .project_wireframe_cont {
+        padding: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .project_link {
+            position: relative;
+            width: 100%;
+            padding: 10px;
+            text-align: left;
+            color: #FD0054;
+            font-size: 18px;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+            text-decoration: underline;
+
+            @include tablet {
+                font-size: 12px;
+            }
+
+        }
+
+        .proj_wire_head {
+            margin: auto;
+            text-align: center;
+            padding: 8px;
+            max-width: fit-content;
+
+            h3 {
+                color: #000;
+                font-size: 22px;
+                border-bottom: 3px #EFE307 solid;
+
+                @include tablet {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .project_wireframe {
+            margin: auto;
+        }
+    }
+
+    .footer_link {
+        position: relative;
+        width: 100%;
+        padding: 10px;
+        text-align: right;
+        color: #AD12FF;
+        font-size: 18px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        text-decoration: underline;
+        margin-bottom: 40px;
+
+        @include tablet {
+            font-size: 14px;
+        }
+
+    }
+
+    .project_form_box {
+        padding-top: 40px;
+
+        .home_footer_ln {
+            width: 25%;
+            height: 3px;
+            background: #FAE703;
+            margin: 20px auto;
+
+            @include tablet {
+                width: 60%;
+            }
+        }
+    }
+
+
+
+}

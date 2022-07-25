@@ -9,11 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tanem/react-nprogress": "^5.0.8",
+    "framer-motion": "^6.5.1",
     "next": "12.2.0",
     "node-sass": "^7.0.1",
+    "nodemailer": "^6.7.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.4.0"
+    "react-icons": "^4.4.0",
+    "zustand": "^4.0.0-rc.2"
   },
   "devDependencies": {
     "eslint": "8.18.0",

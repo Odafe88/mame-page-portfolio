@@ -77,7 +77,7 @@ const Hundred = () => {
 
             </div>
             <div className={styles.proj_main_img_cont}>
-                <Image src={mainImg} />
+                <Image alt="100% nft" src={mainImg} />
             </div>
             <div className={styles.proj_details_cont}>
                 <div className={styles.home_footer_ln}>
@@ -202,7 +202,7 @@ const Hundred = () => {
                                         </h4>
                                     </div>
                                     <div className={styles.proj_user_dets}>
-                                        <ul>
+                                        <ul id={user.name}>
                                             <li>
                                                 <b>- Name: </b>{user.name}
                                             </li>
@@ -228,7 +228,7 @@ const Hundred = () => {
 
                                     </div>
                                     <div className={styles.proj_user_img}>
-                                        <Image src={user.image} />
+                                        <Image alt={user.name} src={user.image} />
                                     </div>
                                 </div>
                             )
@@ -244,7 +244,7 @@ const Hundred = () => {
                     <h3>WIREFRAMES</h3>
                 </div>
                 <div className={styles.project_wireframe}>
-                    <Image src={wireframe} />
+                    <Image alt="wireframes" src={wireframe} />
                 </div>
             </div>
 
@@ -264,7 +264,7 @@ const Hundred = () => {
                     </Link>
                 </div>
                 <div className={styles.project_wireframe}>
-                    <Image src={screen} />
+                    <Image alt="Desktop view" src={screen} />
                 </div>
             </div>
             <div className={styles.project_wireframe_cont}>
@@ -284,19 +284,19 @@ const Hundred = () => {
                 </div>
                 <div className={styles.project_wireframe_grid}>
                     <div className={styles.grid_item_1}>
-                        <Image src={page1} />
+                        <Image alt="page1" src={page1} />
                     </div>
                     <div>
-                        <Image src={page2} />
+                        <Image alt="page2" src={page2} />
                     </div>
                     <div>
-                        <Image src={page3} />
+                        <Image alt="page3" src={page3} />
                     </div>
                     <div>
-                        <Image src={page4} />
+                        <Image alt="page4" src={page4} />
                     </div>
                     <div>
-                        <Image src={page5} />
+                        <Image alt='page5' src={page5} />
                     </div>
                 </div>
             </div>

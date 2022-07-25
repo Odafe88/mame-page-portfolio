@@ -21,7 +21,7 @@ const Valuwa = () => {
 
             </div>
             <div className={styles.proj_main_img_cont}>
-                <Image src={mainImg2} />
+                <Image alt="valuwa" src={mainImg2} />
             </div>
             <div className={styles.proj_details_cont}>
                 <div className={styles.home_footer_ln}>
@@ -130,7 +130,7 @@ const Valuwa = () => {
                     </Link>
                 </div>
                 <div className={styles.project_wireframe}>
-                    <Image src={wireframe} />
+                    <Image alt="desktop demo" src={wireframe} />
                 </div>
             </div>
 
@@ -155,7 +155,7 @@ const Valuwa = () => {
                     </Link>
                 </div>
                 <div className={styles.project_wireframe}>
-                    <Image src={screenImg} />
+                    <Image alt="mobile demo" src={screenImg} />
                 </div>
             </div>
 

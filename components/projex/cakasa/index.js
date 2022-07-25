@@ -97,7 +97,7 @@ const Cakasa = () => {
 
             </div>
             <div className={styles.proj_main_img_cont}>
-                <Image src={mainImg} />
+                <Image alt="cakasa" src={mainImg} />
             </div>
             <div className={styles.proj_details_cont}>
                 <div className={styles.home_footer_ln}>
@@ -230,7 +230,7 @@ const Cakasa = () => {
                     {
                         users.map((user) => {
                             return (
-                                <div className={styles.proj_user_box}>
+                                <div id={user.name} className={styles.proj_user_box}>
                                     <div className={styles.proj_user_head}>
                                         <h4>
                                             {user.client}
@@ -266,7 +266,7 @@ const Cakasa = () => {
 
                                     </div>
                                     <div className={styles.proj_user_img}>
-                                        <Image src={user.image} />
+                                        <Image alt="user image" src={user.image} />
                                     </div>
                                 </div>
                             )
@@ -282,7 +282,7 @@ const Cakasa = () => {
                     <h3>WIREFRAMES</h3>
                 </div>
                 <div className={styles.project_wireframe}>
-                    <Image src={wireframe} />
+                    <Image alt="wireframes" src={wireframe} />
                 </div>
             </div>
 
@@ -302,13 +302,13 @@ const Cakasa = () => {
                     </Link>
                 </div>
                 <div className={styles.project_wireframe}>
-                    <Image src={frame1} />
+                    <Image alt="dashboard demo" src={frame1} />
                 </div>
                 <div className={styles.project_wireframe}>
-                    <Image src={frame2} />
+                    <Image alt="dashboard demo" src={frame2} />
                 </div>
                 <div className={styles.project_wireframe}>
-                    <Image src={frame3} />
+                    <Image alt="dashboard demo" src={frame3} />
                 </div>
             </div>
 

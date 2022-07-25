@@ -100,7 +100,7 @@ const Homepage = () => {
                     </div>
                 </div>
                 <div className={styles.home_img_cont}>
-                    <Image src={portImg1} />
+                    <Image alt="intro image" src={portImg1} />
 
                 </div>
             </div>
@@ -156,7 +156,7 @@ const Homepage = () => {
                         return (
                             <div className={styles.home_proj} key={project.name}>
                                 <div className={styles.home_proj_img}>
-                                    <Image src={project.image} />
+                                    <Image alt="project image" src={project.image} />
                                 </div>
                                 <div className={styles.home_proj_text}>
                                     <p>
@@ -186,7 +186,7 @@ const Homepage = () => {
                     {
                         testimonials.map((testimonial) => {
                             return (
-                                <div className={styles.home_test}>
+                                <div id={testimonial.text} className={styles.home_test}>
                                     <div className={styles.test}>
                                         <RiDoubleQuotesL className={styles.test_quote_left} />
                                         <br></br>
@@ -213,7 +213,7 @@ const Homepage = () => {
             </div>
             <div className={styles.home_resume_cont}>
                 <div className={styles.polygon_resume}>
-                    <Image src={polygon} />
+                    <Image alt="styles" src={polygon} />
                 </div>
                 <div className={styles.home_resume_header}>
                     <h3>Resume</h3>
@@ -227,7 +227,7 @@ const Homepage = () => {
                     </Link>
                 </div>
                 <div className={styles.ellipse_resume}>
-                    <Image src={ellipse} />
+                    <Image alt="styles" src={ellipse} />
                 </div>
 
                 <div className={styles.home_footer_ln}>

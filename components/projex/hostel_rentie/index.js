@@ -19,7 +19,7 @@ const Hostel = () => {
 
             </div>
             <div className={styles.proj_main_img_cont}>
-                <Image src={mainImg} />
+                <Image alt="hostel rentie" src={mainImg} />
             </div>
             <div className={styles.proj_details_cont}>
                 <div className={styles.home_footer_ln}>
@@ -87,7 +87,7 @@ const Hostel = () => {
 
             <div className={styles.project_wireframe_cont}>
                 <div className={styles.project_wireframe}>
-                    <Image src={wireframe} />
+                    <Image alt="dashboard demo" src={wireframe} />
                 </div>
             </div>
 

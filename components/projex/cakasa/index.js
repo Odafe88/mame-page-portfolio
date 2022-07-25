@@ -234,7 +234,7 @@ const Cakasa = () => {
                     {
                         users.map((user) => {
                             return (
-                                <div id={user.id} className={styles.proj_user_box}>
+                                <div key={user.id} className={styles.proj_user_box}>
                                     <div className={styles.proj_user_head}>
                                         <h4>
                                             {user.client}
@@ -242,26 +242,26 @@ const Cakasa = () => {
                                     </div>
                                     <div className={styles.proj_user_dets}>
                                         <ul>
-                                            <li id={user.name}>
+                                            <li key={user.name}>
                                                 <b>- Name: </b>{user.name}
                                             </li>
-                                            <li id={user.age}>
+                                            <li key={user.age}>
                                                 <b>- Age: </b> {user.age}
                                             </li>
-                                            <li id={user.location}>
+                                            <li key={user.location}>
                                                 <b>- Location: </b> {user.location}
                                             </li>
-                                            <li id={user.industry}>
+                                            <li key={user.industry}>
                                                 <b>- Industry: </b> {user.industry}
                                             </li>
-                                            <li id={user.Role}>
+                                            <li key={user.Role}>
                                                 <b>- Role: </b>{user.Role}
                                             </li>
-                                            <li id={user.goals}>
+                                            <li key={user.goals}>
                                                 <b>- Goals: </b><ul>
                                                     {user.goals.map((goal) => {
                                                         return (
-                                                            <li id={goal}>{goal}</li>
+                                                            <li key={goal}>{goal}</li>
                                                         )
                                                     })}
                                                 </ul>

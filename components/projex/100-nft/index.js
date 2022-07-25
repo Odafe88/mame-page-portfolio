@@ -198,31 +198,31 @@ const Hundred = () => {
                     {
                         users.map((user) => {
                             return (
-                                <div id={user.id} className={styles.proj_user_box}>
+                                <div key={user.id} className={styles.proj_user_box}>
                                     <div className={styles.proj_user_head}>
                                         <h4>
                                             {user.client}
                                         </h4>
                                     </div>
                                     <div className={styles.proj_user_dets}>
-                                        <ul id={user.name}>
-                                            <li id={user.name}>
+                                        <ul>
+                                            <li key={user.name}>
                                                 <b>- Name: </b>{user.name}
                                             </li>
-                                            <li id={user.age}>
+                                            <li key={user.age}>
                                                 <b>- Age: </b> {user.age}
                                             </li>
-                                            <li id={user.location}>
+                                            <li key={user.location}>
                                                 <b>- Location: </b> {user.location}
                                             </li>
-                                            <li id={user.maingoal}>
+                                            <li key={user.maingoal}>
                                                 <b>- Main goal: </b> {user.maingoal}
                                             </li>
-                                            <li id={user.goals}>
+                                            <li key={user.goals}>
                                                 <b>- Goals: </b><ul>
                                                     {user.goals.map((goal) => {
                                                         return (
-                                                            <li id={goal}>{goal}</li>
+                                                            <li key={goal}>{goal}</li>
                                                         )
                                                     })}
                                                 </ul>

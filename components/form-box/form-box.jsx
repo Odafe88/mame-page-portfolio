@@ -49,7 +49,7 @@ const FormBox = () => {
         <div className={styles.contact_form_cont}>
             <div className={styles.home_contact_head}>
                 <h3>
-                    Let`s work together
+                    Lets work together
                 </h3>
             </div>
             <div className={styles.home_contact_excerpt}>

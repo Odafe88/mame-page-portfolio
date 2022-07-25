@@ -28,6 +28,7 @@ const Cakasa = () => {
             client: "Engineering client",
             industry: "Oil and gas",
             name: "Jide, oil and gas",
+            id: 1,
             age: 45,
             location: "Sapele , Benin city",
             goals: [
@@ -44,6 +45,7 @@ const Cakasa = () => {
             name: "Miss Clarence",
             industry: "Business",
             age: 29,
+            id: 2,
             location: "Lekki , Lagos city",
             Role: "Marketing manager",
             goals: [
@@ -59,6 +61,7 @@ const Cakasa = () => {
             client: "New client",
             name: "Hon. Sule",
             age: 49,
+            id: 3,
             industry: "Minister of works and power, Kaduna",
             location: "Kaduna, Nigeria",
             Role: "Marketing manager",
@@ -76,6 +79,7 @@ const Cakasa = () => {
             client: "Engineering worker",
             name: "Mr Alex",
             age: 35,
+            id: 4,
             industry: "Engineering",
             location: "Lekki, Nigeria",
             Role: "Engineering worker",
@@ -230,7 +234,7 @@ const Cakasa = () => {
                     {
                         users.map((user) => {
                             return (
-                                <div id={user.name} className={styles.proj_user_box}>
+                                <div id={user.id} className={styles.proj_user_box}>
                                     <div className={styles.proj_user_head}>
                                         <h4>
                                             {user.client}

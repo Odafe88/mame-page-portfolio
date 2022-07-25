@@ -27,6 +27,7 @@ const Hundred = () => {
             client: "User 1 ",
             name: "Jude arts",
             age: 23,
+            id: 1,
             location: "Finland",
             maingoal: "new user that wants buy an existing word phrase",
             goals: [
@@ -42,6 +43,7 @@ const Hundred = () => {
             client: "User 2",
             name: "Kristine",
             age: 18,
+            id: 2,
             location: "Netherland",
             maingoal: "Someone that ordered t shirt that wants check tracking.",
             goals: [
@@ -56,6 +58,7 @@ const Hundred = () => {
             client: "User 3 ",
             name: "Brenda",
             age: 24,
+            id: 3,
             location: "Canada",
             maingoal: "new user wants to get a T -shirt and NFT",
             goals: [
@@ -195,7 +198,7 @@ const Hundred = () => {
                     {
                         users.map((user) => {
                             return (
-                                <div id={user.name} className={styles.proj_user_box}>
+                                <div id={user.id} className={styles.proj_user_box}>
                                     <div className={styles.proj_user_head}>
                                         <h4>
                                             {user.client}

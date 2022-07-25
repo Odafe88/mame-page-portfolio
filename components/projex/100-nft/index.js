@@ -195,7 +195,7 @@ const Hundred = () => {
                     {
                         users.map((user) => {
                             return (
-                                <div className={styles.proj_user_box}>
+                                <div id={user.name} className={styles.proj_user_box}>
                                     <div className={styles.proj_user_head}>
                                         <h4>
                                             {user.client}
@@ -203,23 +203,23 @@ const Hundred = () => {
                                     </div>
                                     <div className={styles.proj_user_dets}>
                                         <ul id={user.name}>
-                                            <li>
+                                            <li id={user.name}>
                                                 <b>- Name: </b>{user.name}
                                             </li>
-                                            <li>
+                                            <li id={user.age}>
                                                 <b>- Age: </b> {user.age}
                                             </li>
-                                            <li>
+                                            <li id={user.location}>
                                                 <b>- Location: </b> {user.location}
                                             </li>
-                                            <li>
+                                            <li id={user.maingoal}>
                                                 <b>- Main goal: </b> {user.maingoal}
                                             </li>
-                                            <li>
+                                            <li id={user.goals}>
                                                 <b>- Goals: </b><ul>
                                                     {user.goals.map((goal) => {
                                                         return (
-                                                            <li>{goal}</li>
+                                                            <li id={goal}>{goal}</li>
                                                         )
                                                     })}
                                                 </ul>

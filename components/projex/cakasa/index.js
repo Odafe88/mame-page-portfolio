@@ -238,26 +238,26 @@ const Cakasa = () => {
                                     </div>
                                     <div className={styles.proj_user_dets}>
                                         <ul>
-                                            <li>
+                                            <li id={user.name}>
                                                 <b>- Name: </b>{user.name}
                                             </li>
-                                            <li>
+                                            <li id={user.age}>
                                                 <b>- Age: </b> {user.age}
                                             </li>
-                                            <li>
+                                            <li id={user.location}>
                                                 <b>- Location: </b> {user.location}
                                             </li>
-                                            <li>
+                                            <li id={user.industry}>
                                                 <b>- Industry: </b> {user.industry}
                                             </li>
-                                            <li>
+                                            <li id={user.Role}>
                                                 <b>- Role: </b>{user.Role}
                                             </li>
-                                            <li>
+                                            <li id={user.goals}>
                                                 <b>- Goals: </b><ul>
                                                     {user.goals.map((goal) => {
                                                         return (
-                                                            <li>{goal}</li>
+                                                            <li id={goal}>{goal}</li>
                                                         )
                                                     })}
                                                 </ul>

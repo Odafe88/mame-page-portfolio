@@ -41,9 +41,13 @@ $true-color: #000;
     }
 
     .home_contact_excerpt {
-        max-width: 630px;
+        width: 100%;
         text-align: center;
         color: #282829;
+
+        @include tablet {
+            width: 100%;
+        }
 
         p {
             font-size: 18px;
